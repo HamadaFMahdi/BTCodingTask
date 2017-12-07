@@ -16,6 +16,9 @@
 #In this version I print "UNKNOWN NOTIFICATION" at the end once I know
 #that a notification resulted in an UNKNOWN status for a node.
 
+#Note:
+#I was advised by a friend to clean up my code by adding more functions and assigning variables to indexes.
+
 import sys
 
 def monitoringSystemTimeStampIsValid(notification):
