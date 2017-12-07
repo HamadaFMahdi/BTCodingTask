@@ -163,6 +163,7 @@ def nodeStatuses():
     return "\n".join(map(lambda x: " ".join(x[:4]), nodeStatusTracker))
 
 def mSTimeStampsInAscendingOrder(notiStream):
+    #I took this line of code from online. But I adapted it to my problem.
     return all(notiStream[i][0] <= notiStream[i+1][0] for i in xrange(len(notiStream)-1))
 
 #MAIN
