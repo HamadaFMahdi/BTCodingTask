@@ -17,6 +17,9 @@
 #ambiguous even if the node status is known after progressing through
 #the rest of the notifications.
 
+#Note:
+#I was advised by a friend to clean up my code by adding more functions and assigning variables to indexes.
+
 import sys
 
 def monitoringSystemTimeStampIsValid(notification):
