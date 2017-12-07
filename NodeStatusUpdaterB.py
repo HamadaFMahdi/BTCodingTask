@@ -166,6 +166,9 @@ def nodeStatuses():
     #The node Time Stamp was appended (line 48) to check for ambiguity in nodeChecker
     return "\n".join(map(lambda x: " ".join(x[:4]), nodeStatusTracker))
 
+def mSTimeStampsInAscendingOrder(notiStream):
+    #I took this line of code from online. But i adapted it to my problem
+    return all(notiStream[i][0] <= notiStream[i+1][0] for i in xrange(len(notiStream)-1))
 
 #MAIN
 
